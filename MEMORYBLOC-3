@@ -5,16 +5,18 @@ exibidos na tela. O jogador será desafiado a memorizar o máximo de letras para
 avançar de nível e chegue até final.
 O jogo possui cinco fases, à medida que o jogador for avançado, o nível de dificuldade é elevado,
 levando assim o jogador a ser desafiado a cada fase.
-Autores: Hellen Cristina Andrade, Joao Vitor Botrel, Quezia Adla Freitas
+Autores: Hellen Cristina Andrade Napoleão, Joao Vitor Botrel, Quezia Adla Freitas
 Data da ultima atualização: 25.06.22
 
 *******************************************************************************************************/
 
+//Declarando as bibliotecas utilizadas
 
 #include <stdio.h>
 #include <stdlib.h>
 #include "conio.h"
 
+//Declarando as variáveis 
 int fase1();
 int fase2();
 int fase3();
@@ -26,11 +28,11 @@ int menu();
 int desenho();
 int ranking();
 
+//Função principal
 int main(){
 _setcursortype(0);
 
-
-
+//Acessando funções de fora da main
 desenho();
 menu();
 gotoxy(69, 15);
@@ -55,7 +57,7 @@ int saida (){
  exit(0);
 }
 
-
+//Creditos do jogo
 void creditos(){
  int opcaoc;
  textcolor(2);
@@ -75,7 +77,7 @@ void creditos(){
  }
 
 }
-
+//Fases que o jogo terá
 int fase1(){
 }
 
@@ -87,11 +89,12 @@ int fase4(){
 }
 int fase5(){
 }
-
+//Ranking do jogador
 int raking(){
  printf("Ranking: ");
 }
 
+//Função do menu 
 int menu(){
  int opcao;
  gotoxy(63,15); printf("OPCAO: ");
@@ -124,6 +127,7 @@ int menu(){
 
 }
 
+//Função da personalização do menu 
 int desenho(){
 
 textcolor(3);
